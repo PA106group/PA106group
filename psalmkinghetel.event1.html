@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PKSALMKING</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            /* Ensure the body takes up the full height of the viewport */
+        }
+        
+        header {
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+            padding: 1em 0;
+        }
+        
+        .event-schedule {
+            background-color: white;
+            padding: 1em;
+            border-radius: 5px;
+            box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        main {
+            padding: 2em;
+            flex: 1;
+            /* Allow the main content to take up the remaining space */
+        }
+        
+        .event-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+        
+        .event-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        
+        #front-page {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 3em 1em;
+            background-image: url('your-image.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        #front-page h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+        
+        .btn {
+            background-color: #ff6600;
+            color: white;
+            padding: 1em 2em;
+            font-size: 1.2em;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 1em;
+        }
+        
+        .btn:hover {
+            background-color: #e65c00;
+        }
+        
+        #events-section {
+            padding: 2em;
+            text-align: center;
+            background-color: #fff;
+            color: #333;
+        }
+        
+        #book-with-us {
+            background-color: #e65c00;
+            color: white;
+            text-align: center;
+            padding: 2em;
+        }
+        /* Help Section styled to stay at the bottom */
+        
+        #help-section {
+            padding: 2em;
+            background-color: #e65c00;
+            text-align: center;
+            margin-top: 50px;
+            position: relative;
+            bottom: 0;
+        }
+        
+        #help-section a {
+            color: #e65c00;
+            text-decoration: none;
+        }
+        
+        #help-section a:hover {
+            text-decoration: underline;
+        }
+        /* Dropdown Button */
+        
+        .dropdown {
+            position: absolute;
+            display: inline-block;
+            top: 104px;
+            left: 10px;
+        }
+        
+        .dropbtn {
+            background-color: #ff6600;
+            color: white;
+            font-size: 16px;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f4f4f4;
+            min-width: 160px;
+            z-index: 1;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+        }
+        
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropdown:hover .dropbtn {
+            background-color: #e65c00;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Psalmking Hotel Events</h1>
+    </header>
+
+    <section id="front-page">
+        <header>
+            <h1>Psalmking Hotel Events</h1>
+        </header>
+        <div class="main-content">
+            <p>Welcome to Psalmking Hotel, where we offer unforgettable events and experiences. Browse through our special events and enjoy a unique stay with us!</p>
+            <a href="#events-section" class="btn">Explore Our Events</a>
+        </div>
+    </section>
+
+    <!-- Dropdown Menu with Three Dots -->
+    <div class="dropdown">
+        <button class="dropbtn">...</button>
+        <div class="dropdown-content">
+            <a href="#book-with-us">book with us</a>
+            <a href="etertainment-and-leisure">entertainment and leisure</a>
+            <a href="cultural-and-artistic">cultural and Artistic</a>
+            <a href="cooparate and proffessional">cooparate and proffessional</a>
+            <a href="Food and Cuisine">food and cousin</a>
+            <a href="#about-section">About</a>
+            <a href="#help-section">Help</a>
+        </div>
+    </div>
+
+    <section id="events-section">
+        <h2>Our Events</h2>
+        <p>Explore the exciting events we have lined up for you!</p>
+    </section>
+
+    <section id="book-with-us">
+        <h2>Book With Us</h2>
+        <p>Ready for an unforgettable experience? Book your stay or event with us today!</p>
+        <a href="contact.html" class="btn">Contact Us</a>
+    </section>
+
+
+
+    <header>
+        <h1>Psalmking Hotel Event</h1>
+    </header>
+
+    <main>
+        <section id="etertainment-and-leisure">
+            <h2>Entertainment and Leisure</h2>
+            <div class="event item">
+                <article class="event">
+                    <h3>Private Sunset and Sunrise Yoga</h3>
+                    <img src="https://t3.ftcdn.net/jpg/05/68/59/02/360_F_568590279_xK4gKYHJXZvXaKoex5kmMG8gl6chgxqz.jpg" alt="Sunset and Sunrise Yoga" class="event-image" />
+                    <p>Experience the serenity of sunrise and sunset yoga session where each breath aligns with the rhythm of nature’s most peaceful moments. There will be a yoga instructor who will guide you and have fun. Activities like: guided meditation,
+                        breathing techniques, and learning yoga skills like Hatha will be included.</p>
+                    <p>The session happens every <strong>Friday from 4 pm to 7 pm</strong></p>
+                    <p><i>Welcome all and get helped to relax mentally and physically</i></p>
+                </article>
+            </div>
+
+            <h3>Golf Tournament</h3>
+            <img src="https://media.istockphoto.com/id/1348081839/photo/golf-course-putting-green-with-flag-at-sunset.jpg?s=612x612&w=0&k=20&c=TacKN3saxiS2_u821Vlq7UCGXmSI4sU46rJr7ZXz-Kk=" alt="Golf Field" />
+            <p>We welcome you all to our seasonal golf competition that will be held on <strong>Saturday, 5th of May 2025</strong></p>
+            <p>We also offer our golf course for hire, whether you are an individual or an organization looking to host your next event. Book with us for an unforgettable golfing experience, perfect for both individuals and events, with a course that is
+                as unique as you are.</p>
+
+            <h3>Luxury Swimming Competition</h3>
+            <p>We also have a wonderful swimming competition that is held every <strong>Saturday afternoon at our PKSALMKING hotel classic swimming pool.</strong></p>
+            <p>You can also book with us either to participate as a spectator or for our VIP experience. We also offer the swimming pool for hire. Welcome all and have fun.</p>
+        </section>
+
+        <section id="cultural-and-artistic">
+            <h2>Cultural and Artistic</h2>
+            <div class="event item">
+                <article class="event">
+                    <h3>Meru Cultural and Festive Season</h3>
+                    <img src="https://kenyatalii.com/wp-content/uploads/2019/12/DSC_0164-800x445-1.jpg" alt="Meru Cultural Season" class="event-image" />
+                    <p>Psalmking Hotel is proud to host one of Meru Land's most vibrant annual cultural celebrations, showcasing the rich traditions and festive spirit of the region. Join us as we honor and appreciate the heart of Meru culture in a truly
+                        unforgettable experience. The event will happen on <strong>June 12, 2025</strong>.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="cooparate and proffessional">
+            <h2>cooparate and proffessional</h2>
+            <div class="event item">
+                <article class="event">
+                    <h3>cooparate and proffessional</h3>
+                    <p>We offer a cool environment for business proffessional.Our experienced staff ensures that your conference run smoothly and you meet your goal. At Psalmking Hotel, we offer fully-equipped meeting rooms with cutting-edge technology to
+                        ensure your business meetings run smoothly and efficiently. Whether you are hosting a small team or a large conference, our modern facilities and our skilled techniqual team will make every session productive and hassle-free. Book
+                        with us and have a taste of PKSALMKING hotel
+                    </p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5Pu7hkBX27G_kStNOq2jliQDcKFDtdcR9z3wGIJvS1NXE0xx7_ZNQPLNFe8yU_Ovw_Wk&usqp=CAU" alt="Conference room" class="event-image" />
+                    <p>We shall olso have a bussiness conference and seminar that will be held on <strong>may 22nd 2025 at PKSALMKING hotel kirinyaga.</strong>
+                        <i><b>Lets gather all and have a chance to learn and sharpen our skill and knowledge</b> </i>
+                    </p>
+                    <p>We olso offer cool and wonderfull wedding ground.Our experienced staff will make sure you have one the best wedding to have ever existed.
+                    </p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZU61AWLtJVJbMqaNX5HzSLMVi8KP-67uJrHWNvPrcgFQKGgk4yfRnETPT20McRXjHVu8&usqp=CAU" alt="Wedding ground" class="event-image/>" <p></p><b><i>WELCOME ALL AND HAVE A TASTE OF US</i></b></p>
+                </article>
+            </div>
+        </section>
+
+
+
+        <section id="food-and-cuisine">
+            <h2>Food and Cuisine</h2>
+            <div class="event item">
+                <article class="event">
+                    <h3>Cooking Classes by Our Master Chefs</h3>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlxoG1QZYcTtKqsHrMQzqLSrBGyzUzLdWTKDtBNJQvrnxOJNwoBd2d9kM92EkjNPgG-2Y&usqp=CAU" alt="Cooking Class" class="event-image" />
+                    <p>Enjoy a hands-on culinary experience by joining our cooking classes where you'll learn from our expert chefs. The classes are available every weekend and give you a chance to prepare some of the finest dishes from local to international
+                        cuisines.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="stay-with-us">
+            <h2>Stay with Us</h2>
+            <p>Stay with us at Psalmking Hotel and enjoy an unforgettable experience. Whether you're here for business, relaxation, or a special event, we have accommodations that suit your needs. Our rooms come with amazing views and the best facilities.</p>
+            <img src="https://img.freepik.com/free-vector/welcome-word-flat-cartoon-people-characters_81522-4207.jpg" alt="welcome all" />
+        </section>
+
+        <section id="help-section">
+            <h2>Need Help?</h2>
+            <p>If you have any questions or need assistance, reach out to us and we'll be happy to help.</p>
+            <p>Email us at: <a href="mailto:info@psalmkinghotel.com">info@psalmkinghotel.com</a></p>
+            <p>Or call us at: <strong>+123-456-7890</strong></p>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
