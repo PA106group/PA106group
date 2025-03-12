@@ -1,0 +1,185 @@
+
+@import url('../css/font.css');
+
+
+html,body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/*-----------GLOABAL CLAUSES--------------*/
+a{
+    text-decoration: none;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+
+.text-gray{
+    color: #000;
+}
+
+
+
+/*--------x----GLOABAL CLAUSES------x-------*/
+
+
+/*------------------navbar---------------*/
+.navp{
+    background: #fff;
+    padding: 0 20px;
+    height: 0rem;
+    min-height: 9vh;
+    overflow: hidden;
+    text-decoration: none;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+
+.navp .mylabel{
+    font-size: 2rem;
+    padding:1.6rem;
+    display: block;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.list-menu{
+    text-decoration: none;
+}
+.navp .nav-menu{
+    justify-content: space-between;
+}
+
+.navp .toggle-collase{
+    position: absolute;
+    top: 20px;
+    width: 100;
+    cursor: pointer;
+    right: 25px;
+}
+
+
+.navp .toggle-collase .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+.navp .toggle-collase .toggle-icons i{
+    font-size: 100wpx;
+}
+
+.navp   .list-menu{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+}
+
+.navp   .list-menu  .link-list{
+    font-size: 1.1rem;
+    padding:1.5rem 1rem;
+    position: relative;
+
+}
+
+
+.navp   .list-menu  .link-list:hover{
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    border-radius: 20px;
+    height: 15px;
+    margin-top: 2px;
+}
+
+
+
+.navp  .login{
+    padding: 2rem 2rem;
+    
+}
+
+.navp  .login   i{
+    padding: 7px;
+}
+
+.navp  .login .login-page:hover{
+    border-radius: 45px;
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
+
+
+/*--------x----------navbar-------x--------*/
+
+
+
+/*        viewport less than or equal to 750        */
+
+
+@media only screen and (max-width:750px){
+    .navp .nav-menu, .navp .list-menu{
+        flex-direction: column;
+        
+    }
+
+}
+
+
+
+/*    x    viewport less than or equal to 750    x    */
+
+
+
+/*     body       */
+body{
+    background: url(../assets/villa.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.body .title    p{
+    font-size: 150px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #30cfd0;
+
+}
+.button {
+    position: absolute;
+    top:69%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.btn{
+    border: 1px solid   #000000;
+    padding: 10px,30px;
+    color: #000000;
+    transition: 1.5 ease;
+    font-size: 50px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.btn:hover{
+    background-color: #00fff2;
+    color: #000000;
+}
+
+/*  x   body   x    */
+
+
+/*           footer              */
+footer.footer{
+    height: 90px;
+    background-color: #000;
+    position: relative;
+
+}
+/*      x    footer      x        */
